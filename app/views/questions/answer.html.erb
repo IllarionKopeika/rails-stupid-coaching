@@ -1,3 +1,17 @@
-<p>You: <%= @question %></p>
-<p>Coach: <%= @answer %></p>
-<%= link_to "Ask a new question", ask_path %>
+<div class="container">
+  <div class="title">
+    <h1>Stupid Coaching</h1>
+  </div>
+  <div class="card" style="margin-bottom: 8px;">
+    <h2><%= @question %></h2>
+    <p>You</p>
+  </div>
+  <div class="card" style="margin-bottom: 8px;">
+    <h2><%= @answer %></h2>
+    <p>Coach</p>
+  </div>
+  <%# <% <%= link_to "Ask a new question", ask_path class="btn-secondary" %>
+  <div style="margin-top: 20px;">
+    <a href="/ask" class="btn-secondary">Ask a new question</a>
+  </div>
+</div>
